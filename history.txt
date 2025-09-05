@@ -1,0 +1,6 @@
+2025-09-01 15:42 | Windsor | 25.8°C | Clear sky | AQI: Moderate (AQI 3)
+2025-09-04 21:12 | Windsor | 16.3°C | Scattered clouds | AQI: Good (AQI 1)
+2025-09-04 21:25 | Vancouver | 21.6°C | Overcast clouds | AQI: Good (AQI 1)
+2025-09-04 21:30 | California | 21.5°C | Scattered clouds | AQI: Fair (AQI 2)
+2025-09-04 21:32 | Provincia di Novara | 17.5°C | Clear sky | AQI: Good (AQI 1)
+2025-09-04 21:34 | Toronto | 15.4°C | Scattered clouds | AQI: Fair (AQI 2)

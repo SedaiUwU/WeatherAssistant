@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-23">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/json-20250517.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/spark-core-2.9.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/slf4j-api-2.0.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/slf4j-simple-2.0.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/javax.servlet-api-4.0.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/jetty-http-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/jetty-io-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/jetty-security-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/jetty-server-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/jetty-servlet-9.4.51.v20230217.jar"/>
+	<classpathentry kind="lib" path="C:/Users/vansh/Java jars/jetty-util-9.4.51.v20230217.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
