@@ -32,7 +32,6 @@ public class SmartWeatherAssistant{
     	int chosenPort = startServer(8080); 
         System.out.println("🚀 Server started at http://localhost:" + chosenPort);
 
-        // ✅ Homepage
         get("/", (req, res) -> {
             return """
             <!DOCTYPE html>
