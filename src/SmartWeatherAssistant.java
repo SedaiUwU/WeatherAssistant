@@ -16,7 +16,7 @@ import org.json.JSONObject;
 
 import static spark.Spark.*; 
 
-public class SmartWeatherAssistant {
+public class SmartWeatherAssistant{
 
     private static final String API_KEY = "25c7bb8f385ff2fbe09aaad95a9bea94";
 
