@@ -14,11 +14,10 @@ import java.util.Scanner;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import static spark.Spark.*; // ✅ Spark for web routes
+import static spark.Spark.*; 
 
 public class SmartWeatherAssistant {
 
-    // ✅ Paste your OpenWeather API key here
     private static final String API_KEY = "25c7bb8f385ff2fbe09aaad95a9bea94";
 
     private static final String WEATHER_URL =
@@ -30,7 +29,7 @@ public class SmartWeatherAssistant {
     private static final DateTimeFormatter TS = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
     public static void main(String[] args) {
-    	int chosenPort = startServer(8080); // ✅ Try 8080, fallback to free port
+    	int chosenPort = startServer(8080); 
         System.out.println("🚀 Server started at http://localhost:" + chosenPort);
 
         // ✅ Homepage
@@ -110,8 +109,6 @@ public class SmartWeatherAssistant {
         });
 
 
-
-     // ✅ Weather Results
         get("/weather", (req, res) -> {
             String city = req.queryParams("city");
             if (city == null || city.isBlank()) {
@@ -204,7 +201,6 @@ public class SmartWeatherAssistant {
         });
 
 
-     // ✅ History Page
         get("/history", (req, res) -> {
             try {
                 java.nio.file.Path p = java.nio.file.Path.of("history.txt");
@@ -310,23 +306,20 @@ public class SmartWeatherAssistant {
 
     private static int startServer(int preferredPort) {
         try (java.net.ServerSocket socket = new java.net.ServerSocket(preferredPort)) {
-            // ✅ Port is free, close test socket and use it
             socket.close();
             port(preferredPort);
             init();
             awaitInitialization();
             return preferredPort;
         } catch (IOException e) {
-            // ❌ Port is busy, fallback to random free port
             System.out.println("⚠ Port " + preferredPort + " busy, switching to a random free port.");
-            port(0); // let Jetty pick
+            port(0); 
             init();
             awaitInitialization();
-            return port(); // return the actual assigned port
+            return port(); 
         }
     }
 
-    // ✅ Helper methods (same as your code)
     private static JSONObject fetchCurrentWeather(String city) throws IOException, InterruptedException {
         String url = String.format(WEATHER_URL,
                 URLEncoder.encode(city, StandardCharsets.UTF_8),
@@ -346,7 +339,7 @@ public class SmartWeatherAssistant {
         JSONArray list = obj.optJSONArray("list");
         if (list == null || list.isEmpty()) return null;
         JSONObject main = list.getJSONObject(0).optJSONObject("main");
-        return (main != null) ? main.optInt("aqi", -1) : null; // 1..5
+        return (main != null) ? main.optInt("aqi", -1) : null; 
     }
 
     private static String aqiToText(Integer aqi) {
